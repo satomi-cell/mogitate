@@ -6,7 +6,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
-    return redirect('/login');
+    return view('welcome');
 });
 
 Route::middleware('auth')->group(function () {

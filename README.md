@@ -1,46 +1,41 @@
-\# Contact Form Test
+# Mogitate
 
+## アプリケーション概要
 
+商品情報を管理するためのアプリケーションです。
+商品を登録・編集・削除することができます。
 
-\## 📌 概要
+## 環境構築
 
-Laravel を使用したお問い合わせフォームアプリケーションです。  
+### Dockerビルド
 
-Docker 環境で構築しています。
+```
+git clone リポジトリURL
+docker-compose up -d
+```
 
+### Laravel環境構築
 
+```
+docker-compose exec app bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+```
 
----
+## 使用技術
 
+* PHP
+* Laravel
+* MySQL
+* Docker
+* Nginx
 
+## ER図
 
-\## 🛠 使用技術
+![ER図](ER.png)
 
+## URL
 
-
-\- PHP 8.2
-
-\- Laravel 12
-
-\- Docker
-
-
-
----
-
-
-
-\## 🚀 環境構築手順
-
-
-
-\### 1. Dockerコンテナ起動
-
-
-
-```bash
-
-docker compose up -d
-
-
-
+開発環境：http://localhost:8000
