@@ -2,16 +2,19 @@
 
 ## アプリケーション概要
 
-商品情報を管理するためのアプリケーションです。
-商品を登録・編集・削除することができます。
+商品を登録・管理できる商品管理アプリです。
+商品の登録、一覧表示、編集、削除を行うことができます。
+
+---
 
 ## 環境構築
 
 ### Dockerビルド
 
 ```
-git clone リポジトリURL
-docker-compose up -d
+git clone https://github.com/satomi-cell/contact-form-test.git
+cd contact-form-test
+docker-compose up -d --build
 ```
 
 ### Laravel環境構築
@@ -24,18 +27,25 @@ php artisan key:generate
 php artisan migrate
 ```
 
+---
+
 ## 使用技術
 
-* PHP
-* Laravel
-* MySQL
+* PHP 8.x
+* Laravel 8.x
+* MySQL 8.0
 * Docker
 * Nginx
+
+---
 
 ## ER図
 
 ![ER図](./ER.png)
 
+---
+
 ## URL
 
-開発環境：http://localhost:8000
+* 開発環境：http://localhost:8000
+* phpMyAdmin：http://localhost:8080
