@@ -34,7 +34,7 @@ php artisan migrate
 
 ## ER図
 
-![ER図](ER.png)
+![ER図](./ER.png)
 
 ## URL
 
